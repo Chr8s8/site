@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Brief — La newsletter crypto quotidienne</title>
+  <meta name="description" content="Le brief crypto de 7h. Chaque jour, l'essentiel du marché, de la DeFi et de la régulation en 5 minutes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Crypto<span>Brief</span></a>
+      <nav class="nav">
+        <a href="#archives">Archives</a>
+        <a href="article.html">Articles</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
+      <a href="#inscription" class="btn btn-small">S'abonner</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO : inscription d'abord, tout le reste ensuite -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-kicker">✉️ La newsletter crypto lue par 42 000 abonnés</p>
+        <h1>Le brief crypto de <em>7h</em>,<br>dans votre boîte avant votre café.</h1>
+        <p class="hero-sub">
+          Marchés, DeFi, régulation, projets à surveiller : l'essentiel de la journée,
+          résumé en 5 minutes. Sans jargon, sans shill, sans FOMO.
+        </p>
+
+        <form class="signup" id="inscription" onsubmit="return subscribe(event)">
+          <input type="email" id="email" placeholder="votre@email.com" required aria-label="Votre adresse email">
+          <button type="submit" class="btn btn-primary">Recevoir le brief</button>
+        </form>
+        <p class="hero-note">Gratuit, tous les jours ouvrés. Désinscription en 1 clic.</p>
+
+        <div class="social-proof">
+          <div class="avatars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <strong>4,9/5</strong> — « La seule newsletter crypto que je lis vraiment. »
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APERÇU D'UN NUMÉRO -->
+    <section class="preview">
+      <div class="container">
+        <h2 class="section-title">À quoi ressemble un numéro ?</h2>
+        <article class="issue-sample">
+          <div class="issue-head">
+            <span class="issue-date">Mardi 17 juin — Édition #412</span>
+            <span class="issue-tag">🟢 Marchés</span>
+          </div>
+          <ol class="issue-toc">
+            <li><strong>Bitcoin tient 104 000 $</strong> — pourquoi les whales accumulent malgré la consolidation</li>
+            <li><strong>Ethereum : le nettoyage des frais L2</strong> — ce que ça change pour les rollups</li>
+            <li><strong>Régulation</strong> — MiCA entre en vigueur : les 3 points qui concernent vos exchanges préférés</li>
+            <li><strong>Projet à surveiller</strong> — un protocole de restaking qui divise la communauté</li>
+            <li><strong>Le chiffre du jour</strong> — 2,1 Md$ de liquidations en 24h</li>
+          </ol>
+          <a href="newsletter.html" class="btn btn-ghost">Lire le numéro complet →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ARCHIVES -->
+    <section class="archives" id="archives">
+      <div class="container">
+        <h2 class="section-title">Les derniers numéros</h2>
+        <div class="archive-grid">
+          <a href="newsletter.html" class="archive-card">
+            <span class="archive-date">Lun 16 juin · #411</span>
+            <h3>Halving, hashrate et l'été indien de Bitcoin</h3>
+            <p>Le mining sous pression, l'opportunité pour les petits mineurs, et pourquoi certains parlent déjà de la prochaine cycle.</p>
+          </a>
+          <a href="newsletter.html" class="archive-card">
+            <span class="archive-date">Ven 13 juin · #410</span>
+            <h3>Le vendredi des altcoins : 5 tokens sous le radar</h3>
+            <p>Notre revue hebdo des projets à faible capitalisation qui montrent des fondamentaux solides.</p>
+          </a>
+          <a href="newsletter.html" class="archive-card">
+            <span class="archive-date">Jeu 12 juin · #409</span>
+            <h3>Stables coins : la guerre des rendements</h3>
+            <p>Après les rendements à deux chiffres, le retour à la raison ? Analyse des modèles économiques.</p>
+          </a>
+          <a href="newsletter.html" class="archive-card">
+            <span class="archive-date">Mer 11 juin · #408</span>
+            <h3>DeFi : les TVL repartent à la hausse</h3>
+            <p>Où va le capital ? Les 5 protocoles qui captent l'essentiel des nouveaux flux.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES (secondaires) -->
+    <section class="articles">
+      <div class="container">
+        <h2 class="section-title">Derniers articles <a href="article.html" class="see-all">Tout voir →</a></h2>
+        <div class="article-grid">
+          <a href="article.html" class="article-card article-card-main">
+            <span class="article-tag">Analyse</span>
+            <h3>Comprendre le restaking sans se brûler les ailes</h3>
+            <p>Le restaking promet des rendements en cascade, mais empile aussi les risques. Le guide clair, avec les pièges à connaître.</p>
+            <span class="article-meta">12 min de lecture</span>
+          </a>
+          <a href="article.html" class="article-card">
+            <span class="article-tag">Guide</span>
+            <h3>Sécuriser ses cryptos en 2025 : la checklist</h3>
+            <p>Hardware wallet, phrases de récupération, signatures aveugles : les 10 réflexes qui évitent 95% des drames.</p>
+            <span class="article-meta">8 min de lecture</span>
+          </a>
+          <a href="article.html" class="article-card">
+            <span class="article-tag">Régulation</span>
+            <h3>MiCA expliqué simplement</h3>
+            <p>Ce que la nouvelle régulation européenne change concrètement pour vous, en tant qu'investisseur particulier.</p>
+            <span class="article-meta">6 min de lecture</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Rejoignez 42 000 lecteurs chaque matin.</h2>
+        <form class="signup" onsubmit="return subscribe(event)">
+          <input type="email" placeholder="votre@email.com" required aria-label="Votre adresse email">
+          <button type="submit" class="btn btn-primary">Recevoir le brief</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="logo logo-footer">Crypto<span>Brief</span></a>
+        <p>La newsletter crypto quotidienne, sans jargon.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#archives">Archives</a>
+        <a href="article.html">Articles</a>
+        <a href="newsletter.html">Newsletter</a>
+        <a href="#">Mentions légales</a>
+      </nav>
+      <p class="footer-note">© 2025 CryptoBrief. Ceci n'est pas un conseil en investissement.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status">Merci ! Vérifiez votre boîte mail pour confirmer. 📬</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

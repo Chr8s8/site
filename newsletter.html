@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Édition #412 — CryptoBrief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Crypto<span>Brief</span></a>
+      <nav class="nav">
+        <a href="index.html#archives">Archives</a>
+        <a href="article.html">Articles</a>
+        <a href="newsletter.html">Newsletter</a>
+      </nav>
+      <a href="index.html#inscription" class="btn btn-small">S'abonner</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-head">
+        <h1>Le brief du mardi 17 juin</h1>
+        <p class="meta">Édition #412 · 5 minutes de lecture</p>
+      </div>
+
+      <div class="prose">
+        <h2>1. Bitcoin tient 104 000 $ malgré la consolidation</h2>
+        <p>Le prix évolue dans un range serré depuis dix jours, mais les données on-chain montrent une accumulation continue des adresses à +1 000 BTC. Les whales achètent la patience des petits porteurs — un schéma déjà observé avant les deux dernières reprises haussières.</p>
+
+        <h2>2. Ethereum : le nettoyage des frais L2</h2>
+        <p>La proposition EIP-3074 de revalorisation des frais des rollups fait débat. En jeu : la sécurité du réseau L1 face à des L2 dont l'activité explose. Pour l'utilisateur, une hausse des coûts de retrait à court terme, mais une incitation forte pour les rollups à devenir plus autonomes.</p>
+
+        <h2>3. Régulation : MiCA entre en vigueur</h2>
+        <p>Trois points qui vous concernent directement : la fin des stablecoins non conformes sur les exchanges européens d'ici décembre, l'obligation de transparence des frais, et un passeport unique permettant aux plateformes agréées d'opérer dans toute l'UE.</p>
+
+        <h2>4. Le projet à surveiller</h2>
+        <p>Un protocole de restaking de nouvelle génération divise la communauté : rendements élevés, mais gouvernance très centralisée. Nous creusons la question dans un article complet cette semaine.</p>
+
+        <h2>5. Le chiffre du jour</h2>
+        <p><strong>2,1 milliards de dollars</strong> de liquidations en 24h — la plus grosse journée de liquidations depuis mars, dominée par les positions courtes.</p>
+
+        <div class="cta-inline">
+          <h3>📬 Ce numéro était gratuit ?</h3>
+          <p>Celui de demain aussi. Recevez-le directement chez vous.</p>
+          <form class="signup" onsubmit="return subscribe(event)">
+            <input type="email" placeholder="votre@email.com" required aria-label="Votre adresse email">
+            <button type="submit" class="btn btn-primary">Recevoir le brief</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="index.html" class="logo logo-footer">Crypto<span>Brief</span></a>
+        <p>La newsletter crypto quotidienne, sans jargon.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">Accueil</a>
+        <a href="index.html#archives">Archives</a>
+        <a href="article.html">Articles</a>
+        <a href="#">Mentions légales</a>
+      </nav>
+      <p class="footer-note">© 2025 CryptoBrief. Ceci n'est pas un conseil en investissement.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status">Merci ! Vérifiez votre boîte mail pour confirmer. 📬</div>
+  <script src="script.js"></script>
+</body>
+</html>
